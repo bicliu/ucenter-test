@@ -10,7 +10,7 @@ CREATE TABLE udevforums_major_node_bind (
 	ip_address VARCHAR (64) DEFAULT NULL COMMENT "主节点IP地址",
 	special_code VARCHAR (255) DEFAULT NULL COMMENT "主节点特征码",
 	status INT (3) DEFAULT "0" COMMENT "状态,0:绑定中,1:绑定确认成功,2.绑定确认失败",
-	validflag	INT (3) DEFAULT "0" COMMENT "有效标志位,0为无效标志，1为有效，不由用户填写",
+	validflag INT (3) DEFAULT "0" COMMENT "有效标志位,0为无效标志，1为有效，不由用户填写",
 	validdate BIGINT (20) DEFAULT "0" COMMENT "签证的有效期 validflag=1 有效,必填",
 	certificate VARCHAR (255) DEFAULT NULL COMMENT "证书",
 	ut_addr VARCHAR (255) DEFAULT NULL COMMENT "Ulord地址",
